@@ -3,6 +3,11 @@ java-ffmpeg-pipe
 
 Simple yet powerful example of integration ffmpeg with java
 
+
+<span width="100%">
+<img src="https://raw.github.com/yev/java-ffmpeg-pipe/master/doc/Java-Ffmpeg-Pipe.jpg" align="center"/>
+</span>
+
 ================
 
 In my last project I encountered the very intresting task: save the snapshots (images) from an RTMP stream into the 
@@ -17,7 +22,3 @@ We can do it with a pipe.
 But how to distiguish differnt images in the pipe binary stream.
 
 My hack is to use a particlur binary signature of the end of image format (png and jpeg). The valid image file has always 2 last bytes equal to FF D9
-
-<span width="100%">
-<img src="https://raw.github.com/yev/java-ffmpeg-pipe/master/doc/Java-Ffmpeg-Pipe.jpg" align="center"/>
-</span>
