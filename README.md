@@ -18,4 +18,4 @@ But how to distiguish differnt images in the pipe binary stream.
 
 My hack is to use a particlur binary signature of the end of image format (png and jpeg). The valid image file has always 2 last bytes equal to FF D9
 
-![schema](https://raw.github.com/yev/java-ffmpeg-pipe/master/doc/Java-Ffmpeg-Pipe.jpg)
+<img src="https://raw.github.com/yev/java-ffmpeg-pipe/master/doc/Java-Ffmpeg-Pipe.jpg" align="center"/>
