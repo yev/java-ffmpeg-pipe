@@ -19,10 +19,11 @@ public class FfmpegScreenshot2Java
   }
 
   /**
-   * Image file format spec. Last two bytes should have the following values:
+   * Image file format spec. Last two bytes should have the following values: FF D9
+   * http://de.wikipedia.org/wiki/JPEG_File_Interchange_Format
    */
-  public static final int JPEG_FILE_EOF_PRE_LAST = 255;
-  public static final int JPEG_FILE_EOF_LAST = 217;
+  public static final int JPEG_FILE_EOF_PRE_LAST = 255; //FF
+  public static final int JPEG_FILE_EOF_LAST = 217;//D9
 
   public static void runProcessing(final String absolutePathToFfmpegExecutable, final String videoInput) throws Exception
   {
@@ -41,7 +42,7 @@ public class FfmpegScreenshot2Java
     2. scale output image to 280 pixels in weight and applying the ratio for height  (-vf scale=280:-1)
     3. compress a bit the image (-q 3)
 
-    You can castomize this by applying all options you need - follow very good
+    You can castomize this by applying all options you need - follow very good ffmpeg doc at http://www.ffmpeg.org/ffmpeg-all.html
      */
     final String ffmpegCmdLine = String.format("%s -analyzeduration 0 -threads 1 -i %s -r 0.2 -vf scale=280:-1 " +
             "-sws_flags lanczos -f image2pipe -q 3 -",absolutePathToFfmpegExecutable, videoInput);
