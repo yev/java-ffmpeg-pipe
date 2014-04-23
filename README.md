@@ -4,9 +4,9 @@ java-ffmpeg-pipe
 Simple yet powerful example of integration ffmpeg with java
 
 
-<span width="100%">
+<div width="100%" align="center">
 <img src="https://raw.github.com/yev/java-ffmpeg-pipe/master/doc/Java-Ffmpeg-Pipe.jpg" align="center"/>
-</span>
+</div>
 
 ================
 
