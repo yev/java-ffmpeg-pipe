@@ -26,4 +26,4 @@ Solution
 
 My hack is to use a particlur binary signature of the end of image format (png and jpeg). The valid image file has always 2 last bytes equal to FF D9
 
-Another, more elegant solution with pure Java approach is using [Xuggler](http://www.xuggle.com/xuggler/) library.
+Another, more elegant solution with pure Java approach is using [Xuggler](http://www.xuggle.com/xuggler/) library. Xuggler has JNI calls to embeded ffmpeg to get job done.
